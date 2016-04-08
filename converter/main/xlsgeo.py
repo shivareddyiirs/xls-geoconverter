@@ -2,6 +2,7 @@
 import csv
 from shapely.geometry import Polygon,Point,LineString, mapping
 from fiona import collection
+from fiona.crs import from_epsg
 import os
 		
 		
@@ -39,7 +40,7 @@ def _create_shp_path(directory):
 def build_point_shape(file_path,shapefile,schema,geometry_field):
 	try:
 		with collection(
-	    	shapefile , "w", "ESRI Shapefile", schema) as output:
+	    	shapefile , "w", "ESRI Shapefile",schema,crs=from_epsg(4326)) as output:
 			    with open(file_path, 'rU') as f:
 			        reader = csv.DictReader(f)
 			        for row in reader:
@@ -67,7 +68,7 @@ def build_schema_key_par(schema,row):
 def build_polygon_shape(file_path,shapefile,schema,geometry_field):
 	try:
 		with collection(
-	    	shapefile , "w", "ESRI Shapefile", schema) as output:
+	    	shapefile , "w", "ESRI Shapefile", schema,crs=from_epsg(4326)) as output:
 			    with open(file_path, 'rU') as f:
 			        reader = csv.DictReader(f)
 			        for row in reader:
@@ -87,7 +88,7 @@ def build_polygon_shape(file_path,shapefile,schema,geometry_field):
 def build_polyline_shape(file_path,shapefile,schema,geometry_field):
 	try:
 		with collection(
-	    	shapefile , "w", "ESRI Shapefile", schema) as output:
+	    	shapefile , "w", "ESRI Shapefile", schema,crs=from_epsg(4326)) as output:
 			    with open(file_path, 'rU') as f:
 			        reader = csv.DictReader(f)
 			        for row in reader:
