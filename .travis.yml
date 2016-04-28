@@ -10,4 +10,4 @@ script:
   "sudo apt-get install -y libgdal-dev"
   "sudo apt-get install -y g++"
   "sudo apt-get install -y python-gdal"
-  "python manage.py runserver"
+  "python converter\manage.py runserver"
