@@ -1,1 +1,7 @@
-
+shapely
+six
+cligj
+argparse
+oredereddict
+fiona
+Django==1.8
