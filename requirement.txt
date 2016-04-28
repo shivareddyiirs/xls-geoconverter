@@ -2,6 +2,6 @@ shapely
 six
 cligj
 argparse
-oredereddict
+ordereddict
 fiona
 Django==1.8
