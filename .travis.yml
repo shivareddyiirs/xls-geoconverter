@@ -5,4 +5,9 @@ python:
 # command to install dependencies
 install: "pip install -r requirement.txt"
 # command to run tests
-script: "python manage.py runserver"
+script: 
+  "sudo apt-get install -y libgdal1-dev"
+  "sudo apt-get install -y libgdal-dev"
+  "sudo apt-get install -y g++"
+  "sudo apt-get install -y python-gdal"
+  "python manage.py runserver"
