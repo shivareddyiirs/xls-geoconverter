@@ -3,11 +3,6 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
-install: 
-  "pip install -r requirement.txt"
-  "sudo apt-get install -y libgdal1-dev"
-  "sudo apt-get install -y libgdal-dev"
-  "sudo apt-get install -y g++"
-  "sudo apt-get install -y python-gdal"
+install: install.sh
 # command to run tests
 script: converter\manage.py runserver
