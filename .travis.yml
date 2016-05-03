@@ -4,6 +4,6 @@ python:
   - "2.7"
 sudo: required
 # command to install dependencies
-install: .\install.sh
+install: sudo .\install.sh
 # command to run tests
 script: converter\manage.py runserver
