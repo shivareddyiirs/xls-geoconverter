@@ -6,6 +6,5 @@ python:
 before_install:
   - chmod a+x install.sh
   - ./install.sh
-install: pip install -r requirement.txt
 # command to run tests
 script: converter/manage.py runserver
