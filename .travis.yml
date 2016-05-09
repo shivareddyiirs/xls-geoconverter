@@ -3,6 +3,7 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
+sudo: required
 before_install:
   - chmod a+x converter/manage.py
   - chmod a+x install.sh
