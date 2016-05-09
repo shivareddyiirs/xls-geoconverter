@@ -1,17 +1,17 @@
 ##vagrant init hashicorp/precise32
-apt-get update
-apt-get install -y python-software-properties
-add-apt-repository -y ppa:ubuntugis/ppa
-apt-get update
-apt-get install -y python-dev
+sudo apt-get update
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository -y ppa:ubuntugis/ppa
+sudo apt-get update
+sudo apt-get install -y python-dev
 
-apt-get install -y libgdal1-dev
-apt-get install -y libgdal-dev
-apt-get install -y g++
-apt-get install -y python-gdal
-apt-get install -y python-pip
+sudo apt-get install -y libgdal1-dev
+sudo apt-get install -y libgdal-dev
+sudo apt-get install -y g++
+sudo apt-get install -y python-gdal
+sudo apt-get install -y python-pip
 
-apt-get update
+sudo apt-get update
 
 pip install shapely
 pip install six
