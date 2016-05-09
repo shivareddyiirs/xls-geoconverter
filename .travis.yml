@@ -7,6 +7,7 @@ packages:
   - libgdal-dev
   - g++
   - python-gdal
+  - gdal-bin
 # command to install dependencies
 install: pip install -r requirement.txt
 # command to run tests
