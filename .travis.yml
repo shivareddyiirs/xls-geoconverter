@@ -2,13 +2,9 @@
 language: python
 python:
   - "2.7"
-packages:
-  - libgdal1-dev
-  - libgdal-dev
-  - g++
-  - python-gdal
-  - gdal-bin
 # command to install dependencies
+before_install:
+  - ./install.sh
 install: pip install -r requirement.txt
 # command to run tests
 script: converter\manage.py runserver
