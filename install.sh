@@ -1,12 +1,22 @@
 ##vagrant init hashicorp/precise32
-apt-get install -y libgdal1-dev
-apt-get install -y libgdal-dev
-apt-get install -y g++
-apt-get install -y python-gdal
-pip install shapely
-pip install six
-pip install cligj
-pip install argparse
-pip install ordereddict
-pip install fiona
-pip install Django==1.8
+sudo apt-get update
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository -y ppa:ubuntugis/ppa
+sudo apt-get update
+sudo apt-get install -y python-dev
+
+sudo apt-get install -y libgdal1-dev
+sudo apt-get install -y libgdal-dev
+sudo apt-get install -y g++
+sudo apt-get install -y python-gdal
+sudo apt-get install -y python-pip
+
+sudo apt-get update
+
+sudo pip install shapely
+sudo pip install six
+sudo pip install cligj
+sudo pip install argparse
+sudo pip install ordereddict
+sudo pip install fiona
+sudo pip install Django==1.8
