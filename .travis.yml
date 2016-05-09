@@ -8,6 +8,6 @@ packages:
   - g++
   - python-gdal
 # command to install dependencies
-install: pip install -r requirements.txt
+install: pip install -r requirement.txt
 # command to run tests
 script: converter\manage.py runserver
