@@ -4,7 +4,8 @@ python:
   - "2.7"
 # command to install dependencies
 before_install:
-  - ./install.sh
+  - chmod a+x install.sh
+  - install.sh
 install: pip install -r requirement.txt
 # command to run tests
 script: converter\manage.py runserver
