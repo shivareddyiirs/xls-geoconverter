@@ -2,8 +2,12 @@
 language: python
 python:
   - "2.7"
-sudo: required
+packages:
+  - libgdal1-dev
+  - libgdal-dev
+  - g++
+  - python-gdal
 # command to install dependencies
-install: install
+install: pip install requirements.txt
 # command to run tests
 script: converter\manage.py runserver
